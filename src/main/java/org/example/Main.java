@@ -42,15 +42,12 @@ public class Main {
         //Exercise 6: substring(), indexOf(), and Non-Existing Words
         sb = new StringBuilder("The quick brown fox jumps over the lazy dog.");
 
-        // Substring returns a String, it does not modify the StringBuilder
         String sub = sb.substring(16, 19);
         System.out.println("Substring: " + sub);
 
-        // indexOf works just like in String
         int indexOfFox = sb.indexOf("fox");
         System.out.println("Index of 'fox': " + indexOfFox);
 
-        // Searching for a word that doesn't exist
         int indexOfCat = sb.indexOf("cat");
         System.out.println("Index of 'cat': " + indexOfCat);
         System.out.println();
@@ -59,10 +56,8 @@ public class Main {
         sb = new StringBuilder("Status: ");
         sb.append("Pending");
 
-        // Now, we need a final, unchangeable String
         String finalStatus = sb.toString();
 
-        // Let's try to change the StringBuilder again
         sb.append(" - Approved");
 
         System.out.println("StringBuilder: " + sb);
